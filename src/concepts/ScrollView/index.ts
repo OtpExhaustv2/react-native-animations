@@ -1,2 +1,3 @@
-export {default as ScrollViewHome} from './ScrollViewHome';
-export {default as ScrollViewHorizontalAnimation} from './ScrollViewHorizontalAnimation';
+export * from "./HorizontalScrollView";
+export * from "./ChannelScrollView";
+export { default as ScrollViewHome } from "./ScrollViewHome";

@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
-import { PanGestureHandlerStackNavProps } from "../../../navigation/App/PanGestureHandler";
-import Card from "../../../shared/Card";
+import { PanGestureHandlerStackNavProps } from "../../navigation/App/PanGestureHandler";
+import Card from "../../shared/Card";
 
 interface PanGestureHandlerHomeProps
   extends PanGestureHandlerStackNavProps<"PanGestureHandlerHome"> {}
@@ -15,6 +15,13 @@ const PanGestureHandlerHome: React.FC<PanGestureHandlerHomeProps> = ({
         text="Reflecty Color"
         onPress={() => {
           navigation.push("ReflectyColor");
+        }}
+      />
+
+      <Card
+        text="Liquid Swipe"
+        onPress={() => {
+          navigation.push("LiquidSwipe");
         }}
       />
     </View>

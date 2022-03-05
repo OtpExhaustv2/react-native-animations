@@ -12,6 +12,7 @@ const AppStack: React.FC<AppStackProps> = ({}) => {
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
+        gestureEnabled: false,
       }}
     >
       <Stack.Screen name="HomeStack" component={HomeStack} />

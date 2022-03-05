@@ -4,7 +4,11 @@ import {
   TransitionPresets,
 } from "@react-navigation/stack";
 import { PanGestureHandlerParamsList } from "./PanGestureHandlerParamsList";
-import { PanGestureHandlerHome, ReflectyColor } from "../../../concepts";
+import {
+  LiquidSwipe,
+  PanGestureHandlerHome,
+  ReflectyColor,
+} from "../../../concepts";
 
 interface PanchGestureHandlerStackProps {}
 
@@ -36,6 +40,7 @@ const PanGestureHandlerStack: React.FC<
         }}
       >
         <Stack.Screen name="ReflectyColor" component={ReflectyColor} />
+        <Stack.Screen name="LiquidSwipe" component={LiquidSwipe} />
       </Stack.Group>
     </Stack.Navigator>
   );

@@ -2,8 +2,9 @@ import { RouteProp } from "@react-navigation/native";
 import { StackNavigationProp } from "@react-navigation/stack";
 
 export type PanGestureHandlerParamsList = {
-  ReflectyColor: undefined;
   PanGestureHandlerHome: undefined;
+  ReflectyColor: undefined;
+  LiquidSwipe: undefined;
 };
 
 export type PanGestureHandlerStackNavProps<

@@ -1,2 +1,3 @@
-export { default as ReflectyColor } from "./Reflecty/ReflectyColor";
-export { default as PanGestureHandlerHome } from "./Reflecty/PanGestureHandlerHome";
+export * from "./Reflecty";
+export * from "./LiquidSwipe";
+export { default as PanGestureHandlerHome } from "./PanGestureHandlerHome";
