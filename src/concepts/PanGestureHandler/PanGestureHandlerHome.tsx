@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { ScrollView } from "react-native";
 import { PanGestureHandlerStackNavProps } from "../../navigation/App/PanGestureHandler";
 import Card from "../../shared/Card";
 
@@ -10,7 +10,10 @@ const PanGestureHandlerHome: React.FC<PanGestureHandlerHomeProps> = ({
   navigation,
 }) => {
   return (
-    <View style={{ flex: 1, alignItems: "center" }}>
+    <ScrollView
+      style={{ flex: 1 }}
+      contentContainerStyle={{ alignItems: "center" }}
+    >
       <Card
         text="Reflecty Color"
         onPress={() => {
@@ -24,7 +27,7 @@ const PanGestureHandlerHome: React.FC<PanGestureHandlerHomeProps> = ({
           navigation.push("LiquidSwipe");
         }}
       />
-    </View>
+    </ScrollView>
   );
 };
 

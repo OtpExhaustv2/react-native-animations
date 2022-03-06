@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { ScrollView } from "react-native";
 import Card from "../../shared/Card";
 import { ScrollViewStackNavProps } from "../../navigation/App/ScrollView";
 
@@ -8,7 +8,10 @@ interface ScrollViewHomeProps
 
 const ScrollViewHome: React.FC<ScrollViewHomeProps> = ({ navigation }) => {
   return (
-    <View style={{ flex: 1, alignItems: "center" }}>
+    <ScrollView
+      style={{ flex: 1 }}
+      contentContainerStyle={{ alignItems: "center" }}
+    >
       <Card
         text="Horizontal Animation"
         onPress={() => {
@@ -21,7 +24,7 @@ const ScrollViewHome: React.FC<ScrollViewHomeProps> = ({ navigation }) => {
           navigation.push("ChannelScrollView");
         }}
       />
-    </View>
+    </ScrollView>
   );
 };
 

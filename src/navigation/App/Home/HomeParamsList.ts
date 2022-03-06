@@ -6,6 +6,7 @@ export type HomeParamsList = {
   PinchGestureHandler: undefined;
   ScrollView: undefined;
   PanGestureHandler: undefined;
+  Animations: undefined;
 };
 
 export type HomeStackNavProps<T extends keyof HomeParamsList> = {

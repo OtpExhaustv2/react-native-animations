@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { ScrollView } from "react-native";
 import { HomeStackNavProps } from "../navigation/App/Home/HomeParamsList";
 import Card from "../shared/Card";
 
@@ -7,7 +7,10 @@ interface HomeScreenProps extends HomeStackNavProps<"Home"> {}
 
 const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   return (
-    <View style={{ flex: 1, alignItems: "center" }}>
+    <ScrollView
+      style={{ flex: 1 }}
+      contentContainerStyle={{ alignItems: "center" }}
+    >
       <Card
         text="PinchGestureHandler"
         onPress={() => {
@@ -26,7 +29,13 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
           navigation.push("PanGestureHandler");
         }}
       />
-    </View>
+      <Card
+        text="Animations"
+        onPress={() => {
+          navigation.push("Animations");
+        }}
+      />
+    </ScrollView>
   );
 };
 

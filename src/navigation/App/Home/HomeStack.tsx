@@ -4,10 +4,11 @@ import {
   TransitionPresets,
 } from "@react-navigation/stack";
 import { HomeParamsList } from "./HomeParamsList";
-import { PinchGestureHandlerStack } from "../PinchGestureHandler";
 import { HomeScreen } from "../../../concepts";
+import { PinchGestureHandlerStack } from "../PinchGestureHandler";
 import { ScrollViewStack } from "../ScrollView";
 import { PanGestureHandlerStack } from "../PanGestureHandler";
+import { AnimationsStack } from "../Animations";
 
 interface HomeStackProps {}
 
@@ -37,6 +38,7 @@ const HomeStack: React.FC<HomeStackProps> = ({}) => {
           name="PanGestureHandler"
           component={PanGestureHandlerStack}
         />
+        <Stack.Screen name="Animations" component={AnimationsStack} />
       </Stack.Group>
     </Stack.Navigator>
   );
