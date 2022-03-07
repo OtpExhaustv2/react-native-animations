@@ -5,6 +5,7 @@ export type PanGestureHandlerParamsList = {
   PanGestureHandlerHome: undefined;
   ReflectyColor: undefined;
   LiquidSwipe: undefined;
+  Tarot: undefined;
 };
 
 export type PanGestureHandlerStackNavProps<

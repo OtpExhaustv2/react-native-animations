@@ -8,6 +8,7 @@ import {
   LiquidSwipe,
   PanGestureHandlerHome,
   ReflectyColor,
+  Tarot,
 } from "../../../concepts";
 
 interface PanchGestureHandlerStackProps {}
@@ -41,6 +42,7 @@ const PanGestureHandlerStack: React.FC<
       >
         <Stack.Screen name="ReflectyColor" component={ReflectyColor} />
         <Stack.Screen name="LiquidSwipe" component={LiquidSwipe} />
+        <Stack.Screen name="Tarot" component={Tarot} />
       </Stack.Group>
     </Stack.Navigator>
   );

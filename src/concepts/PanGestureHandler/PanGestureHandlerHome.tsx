@@ -27,6 +27,13 @@ const PanGestureHandlerHome: React.FC<PanGestureHandlerHomeProps> = ({
           navigation.push("LiquidSwipe");
         }}
       />
+
+      <Card
+        text="Tarot"
+        onPress={() => {
+          navigation.push("Tarot");
+        }}
+      />
     </ScrollView>
   );
 };
