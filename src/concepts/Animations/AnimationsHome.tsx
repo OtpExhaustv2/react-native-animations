@@ -18,6 +18,12 @@ const AnimationsHome: React.FC<AnimationsHomeProps> = ({ navigation }) => {
           navigation.push("ClockLoaderAnimation");
         }}
       />
+      <Card
+        text="3D Carousel"
+        onPress={() => {
+          navigation.push("Carousel");
+        }}
+      />
     </ScrollView>
   );
 };

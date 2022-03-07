@@ -4,6 +4,7 @@ import { RouteProp } from "@react-navigation/native";
 export type AnimationsParamsList = {
   AnimationsHome: undefined;
   ClockLoaderAnimation: undefined;
+  Carousel: undefined;
 };
 
 export type AnimationsStackNavProps<T extends keyof AnimationsParamsList> = {

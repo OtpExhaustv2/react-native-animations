@@ -3,7 +3,7 @@ import {
   createStackNavigator,
   TransitionPresets,
 } from "@react-navigation/stack";
-import { AnimationsHome, ClockLoader } from "../../../concepts";
+import { AnimationsHome, Carousel, ClockLoader } from "../../../concepts";
 import { AnimationsParamsList } from "./AnimationsParamsList";
 
 interface AnimationsStackProps {}
@@ -35,6 +35,7 @@ const AnimationsStack: React.FC<AnimationsStackProps> = () => {
         }}
       >
         <Stack.Screen name="ClockLoaderAnimation" component={ClockLoader} />
+        <Stack.Screen name="Carousel" component={Carousel} />
       </Stack.Group>
     </Stack.Navigator>
   );
