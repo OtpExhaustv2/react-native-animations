@@ -35,6 +35,12 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
           navigation.push("Animations");
         }}
       />
+      <Card
+        text="Flat List"
+        onPress={() => {
+          navigation.push("FlatList");
+        }}
+      />
     </ScrollView>
   );
 };

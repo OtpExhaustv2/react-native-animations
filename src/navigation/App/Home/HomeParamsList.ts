@@ -7,6 +7,7 @@ export type HomeParamsList = {
   ScrollView: undefined;
   PanGestureHandler: undefined;
   Animations: undefined;
+  FlatList: undefined;
 };
 
 export type HomeStackNavProps<T extends keyof HomeParamsList> = {

@@ -5,10 +5,11 @@ import {
 } from "@react-navigation/stack";
 import { HomeParamsList } from "./HomeParamsList";
 import { HomeScreen } from "../../../concepts";
+import { AnimationsStack } from "../Animations";
+import { FlatListStack } from "../FlatList";
+import { PanGestureHandlerStack } from "../PanGestureHandler";
 import { PinchGestureHandlerStack } from "../PinchGestureHandler";
 import { ScrollViewStack } from "../ScrollView";
-import { PanGestureHandlerStack } from "../PanGestureHandler";
-import { AnimationsStack } from "../Animations";
 
 interface HomeStackProps {}
 
@@ -39,6 +40,7 @@ const HomeStack: React.FC<HomeStackProps> = ({}) => {
           component={PanGestureHandlerStack}
         />
         <Stack.Screen name="Animations" component={AnimationsStack} />
+        <Stack.Screen name="FlatList" component={FlatListStack} />
       </Stack.Group>
     </Stack.Navigator>
   );
