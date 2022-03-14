@@ -1,13 +1,15 @@
-import { StackNavigationProp } from "@react-navigation/stack";
-import { RouteProp } from "@react-navigation/native";
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RouteProp } from '@react-navigation/native';
 
 export type FlatListParamsList = {
-  FlatListHome: undefined;
-  ParallaxCarousel: undefined;
-  Timer: undefined;
+	FlatListHome: undefined;
+	ParallaxCarousel: undefined;
+	Timer: undefined;
+	ColorfulCarousel: undefined;
+	Picker: undefined;
 };
 
 export type FlatListStackNavProps<T extends keyof FlatListParamsList> = {
-  navigation: StackNavigationProp<FlatListParamsList, T>;
-  route: RouteProp<FlatListParamsList, T>;
+	navigation: StackNavigationProp<FlatListParamsList, T>;
+	route: RouteProp<FlatListParamsList, T>;
 };

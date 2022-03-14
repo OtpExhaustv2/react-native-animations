@@ -1,27 +1,26 @@
-import React from "react";
-import { ScrollView } from "react-native";
-import { PinchGestureHandlerStackNavProps } from "../../navigation/App/PinchGestureHandler/PinchGestureHandlerParamsList";
-import Card from "../../shared/Card";
+import React from 'react';
+import { ScrollView } from 'react-native';
+import { PinchGestureHandlerStackNavProps } from '../../navigation/App/PinchGestureHandler/PinchGestureHandlerParamsList';
+import Card from '../../shared/Card';
 
 interface PinchGestureHandlerHomeProps
-  extends PinchGestureHandlerStackNavProps<"PinchGestureHandlerHome"> {}
+	extends PinchGestureHandlerStackNavProps<'PinchGestureHandlerHome'> {}
 
 const PinchGestureHandlerHome: React.FC<PinchGestureHandlerHomeProps> = ({
-  navigation,
+	navigation,
 }) => {
-  return (
-    <ScrollView
-      style={{ flex: 1 }}
-      contentContainerStyle={{ alignItems: "center" }}
-    >
-      <Card
-        text="PinchGestureHandlerBasics"
-        onPress={() => {
-          navigation.push("Basics");
-        }}
-      />
-    </ScrollView>
-  );
+	return (
+		<ScrollView
+			style={{ flex: 1 }}
+			contentContainerStyle={{ alignItems: 'center' }}>
+			<Card
+				text='PinchGestureHandlerBasics'
+				onPress={() => {
+					navigation.push('Basics');
+				}}
+			/>
+		</ScrollView>
+	);
 };
 
 export default PinchGestureHandlerHome;
