@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import { PinchGestureHandlerStackNavProps } from '../../navigation/App/PinchGestureHandler/PinchGestureHandlerParamsList';
+import { PinchGestureHandlerStackNavProps } from '../../navigation/App';
 import Card from '../../shared/Card';
 
 interface PinchGestureHandlerHomeProps

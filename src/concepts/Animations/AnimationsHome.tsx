@@ -1,6 +1,6 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import { AnimationsStackNavProps } from "../../navigation/App/Animations";
+import { AnimationsStackNavProps } from "../../navigation/App";
 import Card from "../../shared/Card";
 
 interface AnimationsHomeProps

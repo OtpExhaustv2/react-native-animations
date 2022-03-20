@@ -5,9 +5,9 @@ import {
 } from "@react-navigation/stack";
 import { ScrollViewParamsList } from "./ScrollViewParamsList";
 import {
-  Channel,
-  ScrollViewHome,
-  ScrollViewHorizontalAnimation,
+    Channel, Chrome, DragAndSortList,
+    ScrollViewHome,
+    ScrollViewHorizontalAnimation,
 } from "../../../concepts";
 
 interface ScrollViewStackProps {}
@@ -43,6 +43,8 @@ const ScrollViewStack: React.FC<ScrollViewStackProps> = ({}) => {
           component={ScrollViewHorizontalAnimation}
         />
         <Stack.Screen name="ChannelScrollView" component={Channel} />
+        <Stack.Screen name="ChromeSortableList" component={Chrome} />
+        <Stack.Screen name="DragAndSortList" component={DragAndSortList} />
       </Stack.Group>
     </Stack.Navigator>
   );

@@ -1,3 +1,5 @@
 export * from "./HorizontalScrollView";
 export * from "./ChannelScrollView";
-export { default as ScrollViewHome } from "./ScrollViewHome";
+export * from './DragAndSortList';
+export * from './ChromeSortableList';
+export {default as ScrollViewHome} from "./ScrollViewHome";
